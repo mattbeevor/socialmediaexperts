@@ -1,0 +1,50 @@
+.overlay{
+  position: absolute;
+  top: 125px;
+  text-align: center;
+  color: white;
+}
+
+.button{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.splashimage{
+  position: fixed;
+}
+
+.svg{
+   position:absolute;
+   top:0;
+   left:0px;
+}
+
+.firstparagraph{
+  position:fixed;
+  top:25px;
+  width:60%;
+  margin-left: 20%;
+  margin-top: 200px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6em;
+  padding: 1em 1em 0em 1em;
+  border-radius: 0.25em;
+}
+
+.novatext{
+    font-family:'Exo', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 7em;
+}
+
+.tagline{
+    font-family:'Exo', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 4em;
+}

@@ -1,0 +1,60 @@
+.pricecontainer{
+  background-color: rgba(0,0,0,0.5);
+  padding: 1em 0em 1em 0em;
+}
+
+.topparagraph{
+  max-width: 30em;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6em;
+}
+
+.pricetable{
+  width:60em;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:1.2em;
+}
+
+.spacer{
+  height: 950px;
+}
+
+a{
+  font-size: 2em;
+  color: rgb(50,50,50)
+}
+
+.low{
+  background-color: cornflowerblue
+}
+
+.medium{
+  background-color: mediumseagreen
+}
+
+.high{
+  background-color: gold
+}
+
+.card-title{
+  color: white;
+}
+
+.list-group-item{
+  height: 4em;
+}
+
+.card{
+  width: 18em;
+  background-color: white;
+  -webkit-transition: top 0.05s; /* For Safari 3.1 to 6.0 */
+  transition: top 0.05s;
+  top: 0em;
+}
+
+.card:hover{
+  top: -0.4em;
+}

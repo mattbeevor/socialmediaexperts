@@ -1,0 +1,52 @@
+<div  class="splashimage">
+<img style="width: 100%;" src="/assets/image/splash.jpg">
+</div>
+
+<div class="firstparagraph"   [style.background-color]="dynamicBlack" [style.color]="dynamicWhite">
+<p>We are a team of social media experts with strong experience that can turn your media feeds around in a matter of weeks. We’re on top of our game and keep up-to-date with the ever changing world of social media. We set up all your accounts to look the part and fit in with each other seamlessly, source the best content for your feeds, and create measureable results within the first month.
+</p>
+</div>
+
+
+
+<div class=svg>
+  <svg attr.height="{{Height}}px" attr.width="{{Width}}px">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(255,180,60);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(255,60,100);stop-opacity:1" />
+      </linearGradient>
+      <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(255,166,65);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(255,111,83);stop-opacity:1" />
+      </linearGradient>
+          <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(255,150,70);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(255,60,100);stop-opacity:1" />
+      </linearGradient>
+          <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(255,185,60);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(255,98,87);stop-opacity:1" />
+      </linearGradient>
+          <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(255,105,85);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(255,60,100);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <g box [p]="mainPoints" fill="url(#grad1)"></g>
+    <g box [p]="Apoints" fill="url(#grad5)"></g>
+    <g box [p]="Bpoints" fill="url(#grad2)"></g>
+    <g box [p]="Cpoints" fill="url(#grad4)"></g>
+    <g box [p]="Dpoints" fill="url(#grad3)"></g>
+  </svg>
+</div>
+
+
+<div class="overlay"  style="width: 100%;"><p><span class="novatext">nova media</span><br/><span class="tagline">The social media experts</span></p>
+</div>
+
+<div class="button">
+<button-component ></button-component>
+<splash-component ></splash-component>
+
+</div>

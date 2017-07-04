@@ -1,0 +1,13 @@
+.navbar-brand{
+    font-family:'Exo', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.whitetext{
+    color:white
+}
+
+.blacktext{
+    color:black
+}
