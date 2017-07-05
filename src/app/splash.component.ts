@@ -105,7 +105,6 @@ export class SplashComponent {
   }
 
   slideAlongBoth() {
-    console.log(this.state1,this.state2)
     this.slideAlong1()
     this.slideAlong2()
   }

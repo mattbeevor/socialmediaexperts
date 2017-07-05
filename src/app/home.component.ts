@@ -62,7 +62,6 @@ export class HomeComponent {
  @HostListener("window:scroll", [])
  onscroll() {
     let number = this.document.body.scrollTop;
-    console.log(number)
     this.mainYtranslated=""
     this.mainpointsXlist=[0,this.Width,this.Width,0]
     this.mainpointsYlist=[0,0,this.bottomleft-this.Width/10,this.bottomleft]
@@ -105,7 +104,6 @@ export class HomeComponent {
       this.dynamicOpacity=Math.min(number/100,1)
     }else{
        this.dynamicOpacity=Math.min((500-number)/100,1)
-       console.log(this.dynamicOpacity)
     }
 
 
