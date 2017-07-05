@@ -1,33 +1,13 @@
-
-* {
-  margin: 0;
-  padding: 0;
+#message{
+  overflow: visible;
+  height: auto;
 }
 
-label {
-    font-size: 23px;
-    display: block;
-    margin: 3px 0;
-}
-
-#container {
-  max-width: 500px;
-  padding: 5px 30px 9px 30px;
-  margin: 3px auto;
-  background-color: lightslategray
-}
-
-.contact-form {
+.container{
+  max-width:30em;
   text-align: center;
-  font-weight: 200;
-  font-size: 40px; 
 }
 
-input[type] {
-  display: block;
+.spacer{
+  height:3em
 }
-
-input[type='submit'] {
-  cursor: pointer;
-}
-

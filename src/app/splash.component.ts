@@ -10,43 +10,43 @@ import {Observable} from 'rxjs/Rx';
   animations: [
     trigger('slideAnimation', [
         state('pos0', style({
-            transform: 'translate(0%,0%)',
-        })),
-        state('pos1', style({
-            transform: 'translate(8.33%,0%)',
-        })),
-        state('pos2', style({
-            transform: 'translate(16.66%,0%)',
-        })),
-        state('pos3', style({
-            transform: 'translate(25%,0%)',
-        })),
-        state('pos4', style({
             transform: 'translate(33.33%,0%)',
         })),
-        state('pos5', style({
+        state('pos1', style({
             transform: 'translate(41.66%,0%)',
         })),
-        state('pos6', style({
+        state('pos2', style({
             transform: 'translate(50%,0%)',
         })),
-        state('pos7', style({
+        state('pos3', style({
             transform: 'translate(58.33%,0%)',
         })),
-        transition('pos0 <=> pos1', animate('300ms ease-in-out')),
-        transition('pos1 <=> pos2', animate('300ms ease-in-out')),
-        transition('pos2 <=> pos3', animate('300ms ease-in-out')),
-        transition('pos3 <=> pos4', animate('300ms ease-in-out')),
-        transition('pos4 <=> pos5', animate('300ms ease-in-out')),
-        transition('pos5 <=> pos6', animate('300ms ease-in-out')),
-        transition('pos6 <=> pos7', animate('300ms ease-in-out')),
+        state('pos4', style({
+            transform: 'translate(66.66%,0%)',
+        })),
+        state('pos5', style({
+            transform: 'translate(75%,0%)',
+        })),
+        state('pos6', style({
+            transform: 'translate(83.33%,0%)',
+        })),
+        state('pos7', style({
+            transform: 'translate(91.66%,0%)',
+        })),
+        transition('pos0 <=> pos1', animate('700ms ease-in-out')),
+        transition('pos1 <=> pos2', animate('700ms ease-in-out')),
+        transition('pos2 <=> pos3', animate('700ms ease-in-out')),
+        transition('pos3 <=> pos4', animate('700ms ease-in-out')),
+        transition('pos4 <=> pos5', animate('700ms ease-in-out')),
+        transition('pos5 <=> pos6', animate('700ms ease-in-out')),
+        transition('pos6 <=> pos7', animate('700ms ease-in-out')),
 
 
-        transition('pos7 <=> pos0', animate(300, keyframes([
-            style({opacity: '1',transform: 'translate(58.33%,0%)', easing:'ease-in-out', offset: 0}),
-            style({opacity: '1', transform: 'translate(66%,0%)', offset: 0.998}),
-            style({opacity: '0', transform: 'translate(66%,0%)', offset: 0.999}),
-            style({opacity: '0', transform: 'translate(0%,0%)',  offset: 1}), 
+        transition('pos7 <=> pos0', animate(700, keyframes([
+            style({opacity: '1',transform: 'translate(91.66%,0%)', easing:'ease-in-out', offset: 0}),
+            style({opacity: '1', transform: 'translate(100%,0%)', offset: 0.998}),
+            style({opacity: '0', transform: 'translate(100%,0%)', offset: 0.999}),
+            style({opacity: '0', transform: 'translate(33.33%,0%)',  offset: 1}), 
         ])))
 
     ]),
@@ -105,10 +105,9 @@ export class SplashComponent {
   }
 
   slideAlongBoth() {
-    console.log("s1",this.state1,"s2",this.state2)
+    console.log(this.state1,this.state2)
     this.slideAlong1()
     this.slideAlong2()
-    console.log("s1",this.state1,"s2",this.state2)
   }
 
 

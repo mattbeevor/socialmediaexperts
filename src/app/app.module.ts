@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AngularFireModule} from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -14,6 +17,18 @@ import { HomeComponent } from './home.component';
 import { ButtonComponent } from './button.component';
 import { SplashComponent } from './splash.component';
 import { Box } from './box.component';
+
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyD98sGf1wkBRctaCA2RMEyeJHp-4ZFRBe4",
+    authDomain: "social-contact-form.firebaseapp.com",
+    databaseURL: "https://social-contact-form.firebaseio.com",
+    projectId: "social-contact-form",
+    storageBucket: "social-contact-form.appspot.com",
+    messagingSenderId: "806778232686"
+};
+
+
 
 const appRoutes: Routes = [
   {
@@ -40,6 +55,8 @@ const appRoutes: Routes = [
     pathMatch: 'full'}
 ];
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +70,11 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     NgbModule.forRoot(),
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

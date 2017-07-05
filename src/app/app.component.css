@@ -2,12 +2,15 @@
     font-family:'Exo', sans-serif;
     font-weight: 900;
     font-style: italic;
+    margin-top: -5px !important
+
 }
 
 .whitetext{
-    color:white
+    color:white;
 }
 
 .blacktext{
     color:black
 }
+
